@@ -9,8 +9,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" Component={<WeeklyForecast />} />
-          <Route path="/hour" Component={<HourlyForecast />} />
+          <Route path="/" element={<WeeklyForecast />} />
+          <Route path="/hour" element={<HourlyForecast />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -1,0 +1,51 @@
+body {
+  background-color: black;
+}
+.main-content {
+  height: 100vh;
+  border: 2px solid red;
+  text-align: center;
+  color: white;
+  .search {
+    padding: 4rem;
+    background-color: black;
+
+    .inputGroup-text {
+      background-color: rgba($color: white, $alpha: 0.5);
+      border-radius: 1rem;
+      color: white;
+    }
+
+    .inputGroup-form {
+      background-color: rgba($color: white, $alpha: 0.2);
+      border-radius: 1rem;
+      color: white;
+    }
+  }
+
+  .location {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  .temperature {
+    h1 {
+      font-size: 8rem;
+    }
+  }
+
+  .condition {
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  .dailyReport {
+    background-color: rgba($color: white, $alpha: 0.2);
+    border-radius: 1rem;
+    .row {
+      justify-content: space-evenly;
+    }
+  }
+}

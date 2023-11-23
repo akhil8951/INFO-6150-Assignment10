@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+}
+
+.main-content {
+  height: 100vh;
+  border: 2px solid red;
+  text-align: center;
+  color: white;
+}
+.main-content .search {
+  padding: 4rem;
+  background-color: black;
+}
+.main-content .search .inputGroup-text {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 1rem;
+  color: white;
+}
+.main-content .search .inputGroup-form {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  color: white;
+}
+.main-content .location h2 {
+  font-size: 3rem;
+}
+.main-content .temperature h1 {
+  font-size: 8rem;
+}
+.main-content .condition h3 {
+  font-size: 2rem;
+}
+.main-content .dailyReport {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+}
+.main-content .dailyReport .row {
+  justify-content: space-evenly;
+}/*# sourceMappingURL=WeeklyForecast.css.map */
