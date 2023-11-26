@@ -8,8 +8,9 @@ import {
   InputGroup,
   FormControl,
 } from "react-bootstrap";
-import "../styles/css/WeeklyForecast.css";
-import DailyForecast from "./DailyForecast";
+import "../styles/css/WeeklyAndHourlyForecast.css";
+import image from "../assets/sunnyDay.jpg";
+import DailyForecastCard from "./DailyForecastCard";
 
 const WeeklyForecast = () => {
   const [dayForecast, setDayForecast] = useState([
@@ -18,30 +19,35 @@ const WeeklyForecast = () => {
       high: "2° C",
       low: "-4* C",
       condition: "windy",
+      source: image,
     },
     {
       day: "Tuesday",
       high: "2° C",
       low: "-4* C",
       condition: "windy",
+      source: image,
     },
     {
       day: "Wednesday",
       high: "2° C",
       low: "-4* C",
       condition: "windy",
+      source: image,
     },
     {
       day: "Thursday",
       high: "2° C",
       low: "-4* C",
       condition: "windy",
+      source: image,
     },
     {
       day: "Friday",
       high: "2° C",
       low: "-4* C",
       condition: "windy",
+      source: image,
     },
   ]);
 
@@ -80,7 +86,8 @@ const WeeklyForecast = () => {
           <Row className="row">
             {dayForecast.map((period) => {
               return (
-                <DailyForecast
+                <DailyForecastCard
+                  source={period.source}
                   dayOfWeek={period.day}
                   high={period.high}
                   low={period.low}

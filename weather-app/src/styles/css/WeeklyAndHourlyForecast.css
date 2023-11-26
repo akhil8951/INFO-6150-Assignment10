@@ -25,6 +25,9 @@ body {
 .main-content .location h2 {
   font-size: 3rem;
 }
+.main-content .day h3 {
+  font-size: 2rem;
+}
 .main-content .temperature h1 {
   font-size: 8rem;
 }
@@ -37,4 +40,11 @@ body {
 }
 .main-content .dailyReport .row {
   justify-content: space-evenly;
-}/*# sourceMappingURL=WeeklyForecast.css.map */
+}
+.main-content .HourlyReport {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+}
+.main-content .HourlyReport .row {
+  justify-content: space-evenly;
+}/*# sourceMappingURL=WeeklyAndHourlyForecast.css.map */

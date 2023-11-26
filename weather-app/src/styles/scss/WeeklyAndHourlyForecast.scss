@@ -29,6 +29,11 @@ body {
     }
   }
 
+  .day {
+    h3 {
+      font-size: 2rem;
+    }
+  }
   .temperature {
     h1 {
       font-size: 8rem;
@@ -42,6 +47,14 @@ body {
   }
 
   .dailyReport {
+    background-color: rgba($color: white, $alpha: 0.2);
+    border-radius: 1rem;
+    .row {
+      justify-content: space-evenly;
+    }
+  }
+
+  .HourlyReport {
     background-color: rgba($color: white, $alpha: 0.2);
     border-radius: 1rem;
     .row {
