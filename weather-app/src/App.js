@@ -1,20 +1,15 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import WeeklyForecast from "./components/WeeklyForecast";
-import HourlyForecast from "./components/HourlyForecast";
+import "./App.css";
+import Weather from "./components/Weather";
 
-function App() {
-  return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<WeeklyForecast />} />
-          <Route path="/hour" element={<HourlyForecast />} />
-        </Routes>
-      </BrowserRouter>
-    </>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <Weather history={this.props.history} />
+      </div>
+    );
+  }
 }
 
 export default App;
