@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { TextField } from "@material-ui/core";
 import axios from "axios";
 import moment from "moment";
+const key = process.env.REACT_APP_KEY;
+
 class Weather extends Component {
   constructor(props) {
     super(props);
@@ -19,12 +21,14 @@ class Weather extends Component {
     this.state.city && this.getWeatherData();
   }
   getWeatherData = () => {
+    console.log(key);
     axios
       .get(
-        `http://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&appid=0ce1656a7050b139e3b9076692956ae0`
+        `http://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&appid=${key}`
       )
       .then((res) => {
         console.log(res);
+
         const weatherData = res?.data?.list;
         localStorage.setItem("location", JSON.stringify(res?.data?.city));
         localStorage.setItem("city", this.state.city);
